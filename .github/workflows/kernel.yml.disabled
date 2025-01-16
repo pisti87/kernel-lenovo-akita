@@ -40,7 +40,7 @@ jobs:
 
     - name: Clone APT Repo
       run: |
-        git config --global user.name "pisti87"
+        git config --global user.name "github-actions[bot]@pisti87"
         git config --global user.email "github-actions[bot]@erdist87.gmail.com"
         git clone https://${{ secrets.PAT }}@github.com/pisti87/apt.git --depth=1
         mkdir -p apt/packages
